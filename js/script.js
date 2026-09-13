@@ -7,6 +7,19 @@ document.querySelectorAll('video.bg-video').forEach(video => {
   document.addEventListener('click', tryPlay, { once: true });
 });
 
+document.querySelectorAll('.ba-slider').forEach(slider => {
+  const range = slider.querySelector('.ba-range');
+  const before = slider.querySelector('.ba-before');
+  const divider = slider.querySelector('.ba-divider');
+  const update = () => {
+    const v = range.value;
+    before.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
+    divider.style.left = `${v}%`;
+  };
+  range.addEventListener('input', update);
+  update();
+});
+
 const navToggle = document.getElementById('navToggle');
 const siteNav = document.getElementById('siteNav');
 navToggle.addEventListener('click', () => {
