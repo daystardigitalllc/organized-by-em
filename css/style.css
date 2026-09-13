@@ -4,7 +4,7 @@
   --cream:#fdf8f4;
   --white:#ffffff;
   --dusty-blue:#b7c6d9;
-  --sage:#7c9473;
+  --sage:#4a6b3c;
   --rose:#a8563f;
   --rose-dark:#8a4331;
   --text-dark:#3d2b25;
@@ -74,7 +74,9 @@ em{font-family:var(--font-script);font-style:normal;color:var(--rose);}
 .brand-name{font-family:var(--font-script);font-weight:700;font-size:1.5rem;color:var(--text-dark);}
 .site-nav{display:flex;align-items:center;gap:26px;}
 .site-nav a{font-weight:700;font-size:.95rem;color:var(--text-mid);transition:color .2s;}
-.site-nav a:hover{color:var(--rose);}
+.site-nav a:hover{color:var(--rose-dark);}
+.site-nav a.btn-small,
+.site-nav a.btn-small:hover{color:var(--white);}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
 .nav-toggle span{width:24px;height:2px;background:var(--text-dark);border-radius:2px;}
 
