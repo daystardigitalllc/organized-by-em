@@ -1,5 +1,12 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+document.querySelectorAll('video.bg-video').forEach(video => {
+  video.muted = true;
+  const tryPlay = () => video.play().catch(() => {});
+  tryPlay();
+  document.addEventListener('click', tryPlay, { once: true });
+});
+
 const navToggle = document.getElementById('navToggle');
 const siteNav = document.getElementById('siteNav');
 navToggle.addEventListener('click', () => {
