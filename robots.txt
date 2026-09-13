@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://organized-by-em.pages.dev/sitemap.xml
